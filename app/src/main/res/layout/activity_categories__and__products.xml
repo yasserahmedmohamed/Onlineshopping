@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yasserahmed.onlineshopping.Categories_And_Products">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:columnWidth="90dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="1000dp"
+            android:numColumns="auto_fit"
+
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+          />
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/Search_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:columnWidth="90dp"
+            android:divider="#d4d3d3"
+            android:visibility="gone"
+
+            android:dividerHeight="6dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="1000dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/Layout_Speech"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+       >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/Got_text"
+                    app:searchIcon="@drawable/edit_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Search_itemsSpeech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:columnWidth="90dp"
+                    android:divider="#d4d3d3"
+                    android:dividerHeight="6dp"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1000dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp"
+                   />
+
+                <Button
+                    android:id="@+id/close_speech"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Done" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addelm"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_email"
+
+
+        app:backgroundTint="#00b863" />
+
+</android.support.design.widget.CoordinatorLayout>
